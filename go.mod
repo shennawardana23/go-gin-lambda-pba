@@ -1,15 +1,19 @@
-module go-gin-pba
+module go-lambda-gateway
 
-go 1.21.5
+go 1.19
+
+require github.com/aws/aws-lambda-go v1.46.0 // indirect
 
 require (
-	github.com/apex/gateway v1.1.2 // indirect
-	github.com/aws/aws-lambda-go v1.17.0 // indirect
+	github.com/apex/gateway/v2 v2.0.0
+	github.com/gin-gonic/gin v1.9.1
+)
+
+require (
 	github.com/bytedance/sonic v1.9.1 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
-	github.com/gin-gonic/gin v1.9.1 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.14.0 // indirect
@@ -31,5 +35,4 @@ require (
 	golang.org/x/text v0.9.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/gorm v1.25.7 // indirect
 )
